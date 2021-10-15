@@ -111,7 +111,9 @@ const start = async () => {
     getServerAddress(client.session.dcId, client.session.port),
     client.session.port
   );
-  const message = `Your generated string session from ssg.rojser.best:\n\n${client.session.save()}`;
+  const message = `*Your generated string session from* :\n
+  ---------------------------
+  \n${client.session.save()}\n---------------------\n *SSG BY @lkhitech*`;
   await client.sendMessage("me", { message: message });
   showResultSection();
 };
